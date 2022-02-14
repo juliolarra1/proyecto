@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
+    <!-- Link Animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -50,12 +52,12 @@
                 </h2>
             </section>    
             <section class="grid-container-index">
-                <div class="text-empresa">
+                <div data-aos="fade-right" class="text-empresa">
                     <p class="texto-explicando texto-explicando-tipo-1 texto-3 separado">
                         Empresa de ingenieria y obra civil Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, libero. Illum, ratione distinctio. Temporibus, eum molestias corrupti autem cum, ea quaerat quibusdam quo excepturi expedita explicabo iste voluptas incidunt sed.
                     </p> 
                 </div>
-                <div class="img-empresa"> 
+                <div data-aos="fade-left" class="img-empresa"> 
                     <img src="images/ing-civil.jpg" alt="imagen relacionada con la ing civil">
                 </div> 
                 <div class="img-conformacion">
@@ -151,5 +153,9 @@
         <!-- Fin Footer -->
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
