@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+
+     <!-- Link Animaciones -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <!-- Link CSS -->
      <link rel="stylesheet" href="../style.css">
  
@@ -16,7 +19,8 @@
 <body class="cuerpo">
     <section class="contenedor">
         <!-- Header -->
-        <header class="header">
+        <header data-aos="zoom-in" data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="header">
             <a href="../index.html">
                 <!-- Aca va el logo con el nombre de la empresa -->
                 <img src="../images/logo.png" class="logo-superior" alt="logo de la empresa">
@@ -42,52 +46,69 @@
             <!-- Section completados -->
             <section class="grid-container-proy">
                 <div class="completados titulo texto-2">
-                    <h3>Completados</h3>
+                    <h3 data-aos="zoom-in-up" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" >Completados</h3>
                 </div>
                 <div class="obr-comp-1 texto-3">
-                    <img src="../images/obr-completada.png" class="imagen-tamano box-shadow-img-body" alt="obras completada">
-                    <p>nombre de obra</p>
+                    <img src="../images/obr-completada.png" data-aos="fade-down"
+                    data-aos-duration="1500" class="imagen-tamano box-shadow-img-body" alt="obras completada">
+                    <p data-aos="fade-up"
+                    data-aos-duration="1500">nombre de obra</p>
                 </div>
                 <div class="obr-comp-2 texto-3">
-                    <img src="../images/obr-completada.png" class="imagen-tamano box-shadow-img-body" alt="obras completada">
-                    <p>nombre de obra</p>
+                    <img src="../images/obr-completada.png" data-aos="fade-down"
+                    data-aos-duration="1500" class="imagen-tamano box-shadow-img-body" alt="obras completada">
+                    <p data-aos="fade-up"
+                    data-aos-duration="1500">nombre de obra</p>
                 </div>
                 <div class="obr-comp-3 texto-3">
-                    <img src="../images/obr-completada.png" class="imagen-tamano box-shadow-img-body" alt="obras completada">
-                    <p>nombre de obra</p>
+                    <img src="../images/obr-completada.png" data-aos="fade-down"
+                    data-aos-duration="1500" class="imagen-tamano box-shadow-img-body" alt="obras completada">
+                    <p data-aos="fade-up"
+                    data-aos-duration="1500">nombre de obra</p>
                 </div>
             <!-- Fin section completados -->
             <!-- Section en proceso -->
                 <div class="en-proceso titulo texto-2">
-                    <h3>En proceso</h3>
+                    <h3 data-aos="zoom-in-up" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" >En proceso</h3>
                 </div>
                 <div class="en-proceso-1 texto-3">
-                    <img src="../images/obr-en-proceso.png" class="imagen-tamano box-shadow-img-body" alt="obras en proceso">
-                    <p>nombre de obra</p>
+                    <img src="../images/obr-en-proceso.png" data-aos="fade-down"
+                    data-aos-duration="1500" class="imagen-tamano box-shadow-img-body" alt="obras en proceso">
+                    <p data-aos="fade-up"
+                    data-aos-duration="1500">nombre de obra</p>
                 </div>
                 <div class="en-proceso-2 texto-3">
-                    <img src="../images/obr-en-proceso.png" class="imagen-tamano box-shadow-img-body" alt="obras en proceso">
-                    <p>nombre de obra</p>
+                    <img src="../images/obr-en-proceso.png" data-aos="fade-down"
+                    data-aos-duration="1500" class="imagen-tamano box-shadow-img-body" alt="obras en proceso">
+                    <p data-aos="fade-up"
+                    data-aos-duration="1500">nombre de obra</p>
                 </div>
                 <div class="en-proceso-3 texto-3">
-                    <img src="../images/obr-en-proceso.png" class="imagen-tamano box-shadow-img-body" alt="obras en proceso">
-                    <p>nombre de obra</p>
+                    <img src="../images/obr-en-proceso.png" data-aos="fade-down"
+                    data-aos-duration="1500" class="imagen-tamano box-shadow-img-body" alt="obras en proceso">
+                    <p data-aos="fade-up"
+                    data-aos-duration="1500">nombre de obra</p>
                 </div>
             </section>
             <!-- Fin section en proceso -->
 
         <!-- Inicio del Footer -->
         <footer class="pie">
-            <div class="logo-inferior">
+            <div data-aos="fade-up"
+            data-aos-duration="1500" class="logo-inferior">
                 <a href="../index.html">
                     <!-- Aca va el logo pero sin el nombre de la empresa -->
                     <img src="../images/sinnombre.png" class="boton" alt="logo de la empresa sin nombre">
                 </a>
             </div>
-            <div class="contacto-link boton">
+            <div data-aos="fade-up"
+            data-aos-duration="1500" class="contacto-link boton">
                 <a href="contacto.html" class="lista-1">Contacto</a>
             </div>
-            <div class="info-contacto">
+            <div data-aos="fade-up"
+            data-aos-duration="1500" class="info-contacto">
                 <p class="texto-5">
                     Direccion
                 </p>
@@ -96,7 +117,8 @@
                 </p>
             </div>    
             <!-- Esta parte esta pensada para que luego te lleve a las redes sociales de la empresa -->
-            <div class="social">
+            <div data-aos="fade-up"
+            data-aos-duration="1500" class="social">
                 <a href="https://instagram.com" class="lista-2">
                     <img src="../images/instagram.png" class="social-dim" alt="Te deberia llevar a instagram">
                 </a>
@@ -113,5 +135,11 @@
         </footer>
         <!-- Fin Footer -->
     </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

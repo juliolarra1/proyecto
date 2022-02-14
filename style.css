@@ -543,7 +543,9 @@ div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr;
     grid-column-gap: 5px;
-    grid-row-gap: 15px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    grid-row-gap: 6rem;
     grid-template-areas: 
     'completados completados completados'
     'obr-comp-1 obr-comp-2 obr-comp-3'
