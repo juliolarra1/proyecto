@@ -319,8 +319,8 @@ div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 30rem 10rem 10rem 30rem 30rem 30rem 30rem 10rem 15rem 30rem;
     grid-column-gap: 0px;
-    grid-row-gap: 5px;
-    margin: 1rem;
+    grid-row-gap: 5rem;
+    margin-top: 1rem;
     grid-template-areas: 
     'img-inst-1 img-inst-2'
     'titulo-historia titulo-historia'
@@ -653,6 +653,7 @@ div {
 
 .contenedor {
     width: 100%;
+    
     
 }
 
