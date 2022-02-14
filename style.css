@@ -598,7 +598,7 @@ div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 20rem 20rem 20rem 20rem 29.5rem;
     grid-column-gap: 0.5rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 4rem;
     grid-template-areas: 
     '. contacto-1 contacto-2'
     '. direccion-1 direccion-2'
@@ -641,6 +641,7 @@ div {
 .mapa-1 {
     grid-area: mapa-1;
     margin: 10px;
+    padding-bottom: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
