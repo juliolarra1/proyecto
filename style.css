@@ -320,7 +320,7 @@ div {
     grid-template-rows: 30rem 10rem 10rem 30rem 30rem 30rem 30rem 10rem 15rem 30rem;
     grid-column-gap: 0px;
     grid-row-gap: 5rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     grid-template-areas: 
     'img-inst-1 img-inst-2'
     'titulo-historia titulo-historia'
@@ -439,8 +439,10 @@ div {
     /*En segundo lugar, definir la  cantidad de columnas*/
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.2fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     grid-column-gap: 15px;
-    grid-row-gap: 10px;
+    grid-row-gap: 6rem;
     grid-template-areas: 
     'serv-intro serv-intro serv-intro'
     'titulo-obras-viales titulo-obras-viales titulo-obras-viales'
