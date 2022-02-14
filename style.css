@@ -109,8 +109,9 @@ div {
     /*En segundo lugar, definir la  cantidad de columnas*/
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 22rem 22rem 22rem 22rem;
+    margin-top: 10em;
     grid-column-gap: 0px;
-    grid-row-gap: 6em;
+    grid-row-gap: 10em;
     grid-template-areas: 
     'texto-e img-e img-e'
     'img-c img-c texto-c'
