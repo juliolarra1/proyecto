@@ -13,7 +13,7 @@ img {
     background-color: #FFFFFF;
 }
  /*Esta clase define el estilo del header, su diseño e incluso las sombras*/
-.header {
+.header-1 {
     background-color: transparent;
     padding-top: 4em;
     padding-bottom: 8em;
@@ -664,7 +664,7 @@ div {
 
 /* Media query general e index*/
 @media screen and (max-width: 1295px){
-    .header {
+    .header-1 {
         display: flex;
         flex-direction: column;
     }
