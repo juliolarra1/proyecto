@@ -189,7 +189,7 @@ div {
 
 /* Es un padding y margin para los textos del area del medio de la pagina, asi quedan mas separados de la imagen */
 .separado {
-    padding: 40px;
+    padding: 10px;
     margin: 10px;
 }
 /* Esta clase sirve para darle a las imagenes del area del medio de la pagina un estilo y diseño */
@@ -598,6 +598,7 @@ div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 20rem 20rem 20rem 20rem 29.5rem;
     grid-column-gap: 0.5rem;
+    margin-top: 4rem;
     grid-row-gap: 4rem;
     grid-template-areas: 
     '. contacto-1 contacto-2'
