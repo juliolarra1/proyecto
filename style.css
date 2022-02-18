@@ -189,8 +189,8 @@ div {
 
 /* Es un padding y margin para los textos del area del medio de la pagina, asi quedan mas separados de la imagen */
 .separado {
-    padding: 10px;
-    margin: 20px;
+    padding: 20px;
+    margin: 10px;
 }
 /* Esta clase sirve para darle a las imagenes del area del medio de la pagina un estilo y diseño */
 
