@@ -596,7 +596,7 @@ div {
     display: grid;
     /*En segundo lugar, definir la  cantidad de columnas*/
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20rem 20rem 20rem 20rem 29.5rem;
+    grid-template-rows: 22rem 20rem 20rem 20rem 29.5rem;
     grid-column-gap: 0.5rem;
     margin-top: 4rem;
     grid-row-gap: 4rem;
