@@ -609,10 +609,14 @@ div {
 }
 .contacto-1 {
     grid-area: contacto-1;
+    display: flex;
+    box-sizing: border-box;
     text-align: justify;
 }
 .contacto-2 {
     grid-area: contacto-2;
+    display: flex;
+    box-sizing: border-box;
     text-align: justify;
 }
 .direccion-1 {
