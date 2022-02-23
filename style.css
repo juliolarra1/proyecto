@@ -208,18 +208,23 @@ div {
 
 /*La clase not lo que define es la parte de noticias, le dice como debe ubicarse para que cada cuadro de noticias este proporcional en comparacion al otro*/
 .not {
+    width: auto;
+    height: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-top: 6em;
-    margin-bottom: 4em;
-    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
 }
 /* Esta clase sirve simplemente para crear una sombra en cada una de las imagenes de noticia */
 .not-dim {
-    width: 220px;
+    width: 60%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 /* Estas clases definen la posicion de cada cuadro de noticia */
 .first-not {
