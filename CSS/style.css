@@ -1,19 +1,24 @@
-
-
-
-
-
-
 @charset "UTF-8";
-/* Fuente */
+/*Importaciones de los otros SCSS*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-/* El cuerpo vendria a ser el body, y en este caso lo que se realiza con esta clase es el tono amarillo del fondo, que va cada vez haciendose mas claro*/
-img {
+body {
+  background-color: #FFFFFF;
+}
+body nav {
+  margin: 6px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+body div {
+  background-color: #f5f5f5;
+}
+body img {
   width: 100%;
   height: auto;
   object-fit: fill;
 }
 
+/* Fuente */
 /* Esta clase se define para eliminar lo que vendrian a ser los subrayados de los hipervinculos, ademas de definirles un tamaño apropiado*/
 .lista-1 {
   text-decoration: none;
@@ -26,10 +31,6 @@ img {
 .lista-2 {
   text-decoration: none;
   background-color: #022047;
-}
-
-div {
-  background-color: #f5f5f5;
 }
 
 /* Los texto-1 texto-2 texto-3 definen las fuentes a ser utilizadas en el archivo */

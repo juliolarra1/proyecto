@@ -1,28 +1,22 @@
 /*Importaciones de los otros SCSS*/
 @import "cuerpo";
-
+@import "base/variables";
 
 /* Fuente */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
-/* El cuerpo vendria a ser el body, y en este caso lo que se realiza con esta clase es el tono amarillo del fondo, que va cada vez haciendose mas claro*/
-img {
-    width: 100%;
-    height: auto;
-    object-fit: fill;
-}
 
 /* Esta clase se define para eliminar lo que vendrian a ser los subrayados de los hipervinculos, ademas de definirles un tamaño apropiado*/
-.lista-1{
+.lista-1 {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 20px;
-    color: #022047;
+    color: $color-contraste;
 }
-.lista-2{
+.lista-2 {
     text-decoration: none;
-    background-color: #022047;
+    background-color: $color-contraste;
 }
 /* Los texto-1 texto-2 texto-3 definen las fuentes a ser utilizadas en el archivo */
 .texto-1 {
@@ -30,35 +24,35 @@ img {
     font-weight: 600;
     text-decoration: underline;
     font-size: 45px;
-    color: #005ca0;
+    color: $color-texto-1;
     text-align: left;
 }
 .texto-2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 40px;
-    color: #FFFFFF;
+    color: $color-blanco;
     background-size: cover;
-    background-color: #022047;
+    background-color: $color-contraste;
 }
 .texto-3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 26px;
-    color: #858585;
+    color: $color-texto-3;
 }
 .texto-4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 15.5px;
-    color: #022047;
+    color: $color-contraste;
 }
 .texto-5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    color: #FFFFFF;
-    background-color: #022047;
+    color: $color-blanco;
+    background-color: $color-contraste;
 }
 
 /* Esta clase ayuda a definir la imagen de la portada y a ubicarla */
@@ -192,7 +186,7 @@ img {
 }
 /*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
 .pie {
-    background-color: #022047;
+    background-color: $color-contraste;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,17 +197,17 @@ img {
     box-sizing: border-box;
 }
 .social {
-    background-color: #022047;
+    background-color: $color-contraste;
 }
 .info-contacto {
-    background-color: #022047;
+    background-color: $color-contraste;
 }
 .logo-superior {
     width: 150px;
     height: auto;
 }
 .logo-inferior {
-    background-color: #022047;
+    background-color: $color-contraste;
     margin: 1rem;
     width: 6rem;
     height: auto;
@@ -231,12 +225,12 @@ img {
     
 /*Estas clases funcionan para definir el estilo de los botones que remplazan a los hipervinculos normales por algo mas creativo y con animacion propia*/
 .boton {
-    background: #FFFFFF;
+    background: $color-blanco;
     font-family: inherit;
     padding: 0.6em 1.3em;
     font-weight: 900;
     font-size: 22px;
-    border: 3px solid #858585;
+    border: 3px solid $color-texto-3;
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
    }
