@@ -67,7 +67,11 @@
     box-sizing: border-box;
 }
 
-/* Esta clase le da un borde especifico y una sombra a la imagen de portada*/
+/* Esta clase le da un tamaño especifico a las imagenes en el carousel*/
+.img-not {
+    width: 30rem;
+    height: 34rem;
+}
 
 /* Este grid lo que contiene es toda la informacion central de index, aqui se definen las clases que lo componen y las areas que van a ocupar las mismas */
 .grid-container-index {
