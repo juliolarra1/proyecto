@@ -1,15 +1,5 @@
 /*Importaciones de los otros SCSS*/
-@import "cuerpo";
-@import "contacto";
-@import "decoracion";
-@import "home";
-@import "institucion";
-@import "proyectos";
-@import "servicios";
 @import "base/variables";
-/* Fuente */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-
 
 /*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
 .pie {

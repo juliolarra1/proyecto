@@ -18,7 +18,95 @@ body img {
   object-fit: fill;
 }
 
+/*Importaciones de los otros SCSS*/
+/* Inicio de los estilos especificos de Contacto */
+.grid-container-contacto {
+  /* Habilitar la grilla*/
+  display: grid;
+  /*En segundo lugar, definir la  cantidad de columnas*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 22rem 20rem 20rem 20rem 29.5rem;
+  grid-column-gap: 0.5rem;
+  margin-top: 4rem;
+  grid-row-gap: 4rem;
+  grid-template-areas: ". contacto-1 contacto-2" ". direccion-1 direccion-2" ". email-1 email-2" ". telefono-1 telefono-2" "mapa-1 mapa-1 mapa-1";
+}
+
+.contacto-1 {
+  grid-area: contacto-1;
+  display: flex;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.contacto-2 {
+  grid-area: contacto-2;
+  display: flex;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.direccion-1 {
+  grid-area: direccion-1;
+  text-align: justify;
+}
+
+.direccion-2 {
+  grid-area: direccion-2;
+  text-align: justify;
+}
+
+.email-1 {
+  grid-area: email-1;
+  text-align: justify;
+}
+
+.email-2 {
+  grid-area: email-2;
+  text-align: justify;
+}
+
+.telefono-1 {
+  grid-area: telefono-1;
+  text-align: justify;
+}
+
+.telefono-2 {
+  grid-area: telefono-2;
+  text-align: justify;
+}
+
+.mapa-1 {
+  grid-area: mapa-1;
+  margin: 10px;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textos-centrados-alineados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Fin de los estilos especificos de Contacto */
+/*Importaciones de los otros SCSS*/
 /* Fuente */
+/* Esta clase ayuda a definir la imagen de la portada y a ubicarla */
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* Esta clase se define para eliminar lo que vendrian a ser los subrayados de los hipervinculos, ademas de definirles un tamaño apropiado*/
 .lista-1 {
   text-decoration: none;
@@ -74,16 +162,17 @@ body img {
   background-color: #022047;
 }
 
-/* Esta clase ayuda a definir la imagen de la portada y a ubicarla */
-.titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  width: 100%;
-  box-sizing: border-box;
+/* Las clases de texto-explicando y los tipos hacen referencia a los textos centrales que estan al lado de las imagenes, los definen y a su vez indican si van de derecha a izquierda o de izquierda a derecha*/
+.texto-explicando-tipo-1 {
+  text-align: left;
+}
+
+.texto-explicando-tipo-2 {
+  text-align: right;
+}
+
+.texto-explicando-tipo-3 {
+  text-align: center;
 }
 
 /* Esta clase le da un tamaño especifico a las imagenes en el carousel*/
@@ -92,6 +181,25 @@ body img {
   height: 34rem;
 }
 
+.imagen-tamano {
+  width: 100%;
+  height: 60%;
+}
+
+/* Es un padding y margin para los textos del area del medio de la pagina, asi quedan mas separados de la imagen */
+.separado {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Esta clase sirve para darle a las imagenes del area del medio de la pagina un estilo y diseño */
+/*Codigo para hacerlo responsive*/
+.contenedor {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*Importaciones de los otros SCSS*/
 /* Este grid lo que contiene es toda la informacion central de index, aqui se definen las clases que lo componen y las areas que van a ocupar las mismas */
 .grid-container-index {
   /* Habilitar la grilla*/
@@ -173,32 +281,6 @@ body img {
   display: inline-block;
 }
 
-.imagen-tamano {
-  width: 100%;
-  height: 60%;
-}
-
-/* Fin del grid del index */
-/* Es un padding y margin para los textos del area del medio de la pagina, asi quedan mas separados de la imagen */
-.separado {
-  padding: 10px;
-  margin: 10px;
-}
-
-/* Esta clase sirve para darle a las imagenes del area del medio de la pagina un estilo y diseño */
-/* Las clases de texto-explicando y los tipos hacen referencia a los textos centrales que estan al lado de las imagenes, los definen y a su vez indican si van de derecha a izquierda o de izquierda a derecha*/
-.texto-explicando-tipo-1 {
-  text-align: left;
-}
-
-.texto-explicando-tipo-2 {
-  text-align: right;
-}
-
-.texto-explicando-tipo-3 {
-  text-align: center;
-}
-
 /*La clase not lo que define es la parte de noticias, le dice como debe ubicarse para que cada cuadro de noticias este proporcional en comparacion al otro*/
 .not {
   width: auto;
@@ -210,78 +292,8 @@ body img {
   margin-bottom: 2em;
 }
 
-/*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
-.pie {
-  background-color: #022047;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 5rem;
-  padding-bottom: 6rem;
-  padding-right: 15px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.social {
-  background-color: #022047;
-}
-
-.info-contacto {
-  background-color: #022047;
-}
-
-.logo-superior {
-  width: 150px;
-  height: auto;
-}
-
-.logo-inferior {
-  background-color: #022047;
-  margin: 1rem;
-  width: 6rem;
-  height: auto;
-  box-sizing: border-box;
-}
-
-.social-dim {
-  width: 60px;
-  height: auto;
-}
-
-/* Esta clase la use simplemente para definir un espacio entre los iconos inferiores que te llevan a las distintas redes sociales, con esto logre una separacion adecuada entre ellos*/
-.face {
-  margin: 10px;
-  padding-left: 0;
-}
-
-/*Estas clases funcionan para definir el estilo de los botones que remplazan a los hipervinculos normales por algo mas creativo y con animacion propia*/
-.boton {
-  background: #FFFFFF;
-  font-family: inherit;
-  padding: 0.6em 1.3em;
-  font-weight: 900;
-  font-size: 22px;
-  border: 3px solid #858585;
-  border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em;
-}
-
-.boton:hover {
-  transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.15em 0.15em;
-}
-
-.boton:active {
-  transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em;
-}
-
-.box-shadow-img-body {
-  -webkit-box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.84);
-  box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.84);
-}
-
+/* Fin del grid del index */
+/*Importaciones de los otros SCSS*/
 /* Inicio de los estilos especificos de Institucion */
 /* Definimos la grid del cuerpo de institucion */
 .grid-container-inst {
@@ -395,6 +407,139 @@ body img {
 }
 
 /* Fin de los estilos especificos de Institucion */
+/*Importaciones de los otros SCSS*/
+/*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
+.pie {
+  background-color: #022047;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  padding-right: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.social {
+  background-color: #022047;
+}
+
+.info-contacto {
+  background-color: #022047;
+}
+
+.logo-superior {
+  width: 150px;
+  height: auto;
+}
+
+.logo-inferior {
+  background-color: #022047;
+  margin: 1rem;
+  width: 6rem;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.social-dim {
+  width: 60px;
+  height: auto;
+}
+
+/* Esta clase la use simplemente para definir un espacio entre los iconos inferiores que te llevan a las distintas redes sociales, con esto logre una separacion adecuada entre ellos*/
+.face {
+  margin: 10px;
+  padding-left: 0;
+}
+
+/*Estas clases funcionan para definir el estilo de los botones que remplazan a los hipervinculos normales por algo mas creativo y con animacion propia*/
+.boton {
+  background: #FFFFFF;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 22px;
+  border: 3px solid #858585;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}
+
+.boton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.boton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.box-shadow-img-body {
+  -webkit-box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.84);
+  box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.84);
+}
+
+/*Importaciones de los otros SCSS*/
+.grid-container-proy {
+  /* Habilitar la grilla*/
+  display: grid;
+  /*En segundo lugar, definir la  cantidad de columnas*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr;
+  grid-column-gap: 5px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  grid-row-gap: 6rem;
+  grid-template-areas: "completados completados completados" "obr-comp-1 obr-comp-2 obr-comp-3" "en-proceso en-proceso en-proceso" "en-proceso-1 en-proceso-2 en-proceso-3";
+}
+
+.completados {
+  grid-area: completados;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.obr-comp-1 {
+  grid-area: obr-comp-1;
+  text-align: center;
+}
+
+.obr-comp-2 {
+  grid-area: obr-comp-2;
+  text-align: center;
+}
+
+.obr-comp-3 {
+  grid-area: obr-comp-3;
+  text-align: center;
+}
+
+.en-proceso {
+  grid-area: en-proceso;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.en-proceso-1 {
+  grid-area: en-proceso-1;
+  text-align: center;
+}
+
+.en-proceso-2 {
+  grid-area: en-proceso-2;
+  text-align: center;
+}
+
+.en-proceso-3 {
+  grid-area: en-proceso-3;
+  text-align: center;
+}
+
+/* Fin de los estilos especificos de Proyectos */
+/*Importaciones de los otros SCSS*/
 /* Inicio de los estilos especificos de Servicios */
 .grid-container-serv {
   /* Habilitar la grilla*/
@@ -504,145 +649,6 @@ body img {
 }
 
 /* Fin de los estilos especificos de Servicios */
-/* Inicio de los estilos especificos de Proyectos */
-.grid-container-proy {
-  /* Habilitar la grilla*/
-  display: grid;
-  /*En segundo lugar, definir la  cantidad de columnas*/
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr;
-  grid-column-gap: 5px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  grid-row-gap: 6rem;
-  grid-template-areas: "completados completados completados" "obr-comp-1 obr-comp-2 obr-comp-3" "en-proceso en-proceso en-proceso" "en-proceso-1 en-proceso-2 en-proceso-3";
-}
-
-.completados {
-  grid-area: completados;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.obr-comp-1 {
-  grid-area: obr-comp-1;
-  text-align: center;
-}
-
-.obr-comp-2 {
-  grid-area: obr-comp-2;
-  text-align: center;
-}
-
-.obr-comp-3 {
-  grid-area: obr-comp-3;
-  text-align: center;
-}
-
-.en-proceso {
-  grid-area: en-proceso;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.en-proceso-1 {
-  grid-area: en-proceso-1;
-  text-align: center;
-}
-
-.en-proceso-2 {
-  grid-area: en-proceso-2;
-  text-align: center;
-}
-
-.en-proceso-3 {
-  grid-area: en-proceso-3;
-  text-align: center;
-}
-
-/* Fin de los estilos especificos de Proyectos */
-/* Inicio de los estilos especificos de Contacto */
-.grid-container-contacto {
-  /* Habilitar la grilla*/
-  display: grid;
-  /*En segundo lugar, definir la  cantidad de columnas*/
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 22rem 20rem 20rem 20rem 29.5rem;
-  grid-column-gap: 0.5rem;
-  margin-top: 4rem;
-  grid-row-gap: 4rem;
-  grid-template-areas: ". contacto-1 contacto-2" ". direccion-1 direccion-2" ". email-1 email-2" ". telefono-1 telefono-2" "mapa-1 mapa-1 mapa-1";
-}
-
-.contacto-1 {
-  grid-area: contacto-1;
-  display: flex;
-  box-sizing: border-box;
-  text-align: justify;
-}
-
-.contacto-2 {
-  grid-area: contacto-2;
-  display: flex;
-  box-sizing: border-box;
-  text-align: justify;
-}
-
-.direccion-1 {
-  grid-area: direccion-1;
-  text-align: justify;
-}
-
-.direccion-2 {
-  grid-area: direccion-2;
-  text-align: justify;
-}
-
-.email-1 {
-  grid-area: email-1;
-  text-align: justify;
-}
-
-.email-2 {
-  grid-area: email-2;
-  text-align: justify;
-}
-
-.telefono-1 {
-  grid-area: telefono-1;
-  text-align: justify;
-}
-
-.telefono-2 {
-  grid-area: telefono-2;
-  text-align: justify;
-}
-
-.mapa-1 {
-  grid-area: mapa-1;
-  margin: 10px;
-  padding-bottom: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.textos-centrados-alineados {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* Fin de los estilos especificos de Contacto */
-/*Codigo para hacerlo responsive*/
-.contenedor {
-  width: 100%;
-  overflow: hidden;
-}
-
 /* Media query general e index*/
 @media screen and (max-width: 1295px) {
   .header-1 {
@@ -713,6 +719,5 @@ body img {
     display: none;
   }
 }
-/* Esta es el area dedicada exclusivamente a animaciones */
 
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,5 @@
 /*Importaciones de los otros SCSS*/
-@import "cuerpo";
-@import "contacto";
-@import "decoracion";
-@import "institucion";
-@import "pie";
-@import "proyectos";
-@import "servicios";
 @import "base/variables";
-/* Fuente */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 
 /* Este grid lo que contiene es toda la informacion central de index, aqui se definen las clases que lo componen y las areas que van a ocupar las mismas */
