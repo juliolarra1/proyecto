@@ -1,0 +1,134 @@
+/*Importaciones de los otros SCSS*/
+@import "cuerpo";
+@import "contacto";
+@import "decoracion";
+@import "home";
+@import "pie";
+@import "proyectos";
+@import "servicios";
+@import "base/variables";
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+/* Inicio de los estilos especificos de Institucion */
+
+/* Definimos la grid del cuerpo de institucion */
+.grid-container-inst {
+    /* Habilitar la grilla*/
+    display: grid;
+    /*En segundo lugar, definir la  cantidad de columnas*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30rem 10rem 10rem 30rem 30rem 30rem 30rem 10rem 15rem 30rem;
+    grid-column-gap: 0px;
+    grid-row-gap: 5rem;
+    margin-top: 3rem;
+    grid-template-areas: 
+    'img-inst-1 img-inst-2'
+    'titulo-historia titulo-historia'
+    'desarrollo-historia desarrollo-historia'
+    'img-historia-1 img-historia-2'
+    'mision img-mision'
+    'vision img-vision'
+    'valores img-valores'
+    'titulo-eco titulo-eco'
+    'desarrollo-eco desarrollo-eco'
+    'img-eco img-eco';
+
+}
+.img-inst-1 {
+    grid-area: img-inst-1;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.img-inst-2 {
+    grid-area: img-inst-2;
+    display: flex;
+    box-sizing: border-box;
+    
+    
+}
+.titulo-historia {
+    grid-area: titulo-historia;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.desarrollo-historia {
+    grid-area: desarrollo-historia;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.img-historia-1 {
+    grid-area: img-historia-1;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.img-historia-2 {
+    grid-area: img-historia-2;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.mision {
+    grid-area: mision;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-mision {
+    grid-area: img-mision;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.vision {
+    grid-area: vision;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-vision {
+    grid-area: img-vision;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.valores {
+    grid-area: valores;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-valores {
+    grid-area: img-valores;
+    display: flex;
+    box-sizing: border-box;
+    
+    
+}
+
+.titulo-eco {
+    grid-area: titulo-eco;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.desarrollo-eco {
+    grid-area: desarrollo-eco;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.img-eco {
+    grid-area: img-eco;
+    margin-bottom: 1em;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+
+/* Fin de los estilos especificos de Institucion */

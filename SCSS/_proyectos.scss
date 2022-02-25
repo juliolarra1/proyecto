@@ -1,0 +1,66 @@
+/*Importaciones de los otros SCSS*/
+@import "cuerpo";
+@import "contacto";
+@import "decoracion";
+@import "home";
+@import "institucion";
+@import "pie";
+@import "servicios";
+@import "base/variables";
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+/* Inicio de los estilos especificos de Proyectos */
+
+.grid-container-proy {
+    /* Habilitar la grilla*/
+    display: grid;
+    /*En segundo lugar, definir la  cantidad de columnas*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr;
+    grid-column-gap: 5px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    grid-row-gap: 6rem;
+    grid-template-areas: 
+    'completados completados completados'
+    'obr-comp-1 obr-comp-2 obr-comp-3'
+    'en-proceso en-proceso en-proceso'
+    'en-proceso-1 en-proceso-2 en-proceso-3';
+}
+.completados {
+    grid-area: completados;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.obr-comp-1 {
+    grid-area: obr-comp-1;
+    text-align: center;
+}
+.obr-comp-2 {
+    grid-area: obr-comp-2;
+    text-align: center;
+}
+.obr-comp-3 {
+    grid-area: obr-comp-3;
+    text-align: center;
+}
+.en-proceso {
+    grid-area: en-proceso;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.en-proceso-1 {
+    grid-area: en-proceso-1;
+    text-align: center;
+}
+.en-proceso-2 {
+    grid-area: en-proceso-2;
+    text-align: center;
+}
+.en-proceso-3 {
+    grid-area: en-proceso-3;
+    text-align: center;
+}
+/* Fin de los estilos especificos de Proyectos */

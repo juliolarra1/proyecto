@@ -1,0 +1,104 @@
+/*Importaciones de los otros SCSS*/
+@import "cuerpo";
+@import "contacto";
+@import "decoracion";
+@import "institucion";
+@import "pie";
+@import "proyectos";
+@import "servicios";
+@import "base/variables";
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+/* Este grid lo que contiene es toda la informacion central de index, aqui se definen las clases que lo componen y las areas que van a ocupar las mismas */
+.grid-container-index {
+    /* Habilitar la grilla*/
+    display: grid;
+    /*En segundo lugar, definir la  cantidad de columnas*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 26rem 26rem 26rem 26rem;
+    margin-top: 10em;
+    grid-column-gap: 0px;
+    grid-row-gap: 10em;
+    grid-template-areas: 
+    'texto-e img-e img-e'
+    'img-c img-c texto-c'
+    'texto-a img-a img-a'
+    'img-n img-n texto-n';
+
+}
+
+.text-empresa {
+    grid-area: texto-e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+.img-empresa {
+    grid-area: img-e;
+    display: flex;
+    box-sizing: border-box;
+}
+.img-conformacion {
+    grid-area: img-c;
+    display: flex;
+    box-sizing: border-box;
+}
+.text-conformacion {
+    grid-area: texto-c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+.text-areas {
+    grid-area: texto-a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+.img-areas {
+    grid-area: img-a;
+    display: flex;
+    box-sizing: border-box;
+}
+.img-numeros {
+    grid-area: img-n;
+    display: flex;
+    box-sizing: border-box;
+}
+.text-numeros {
+    grid-area: texto-n;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+
+/*La clase not lo que define es la parte de noticias, le dice como debe ubicarse para que cada cuadro de noticias este proporcional en comparacion al otro*/
+.not {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+
+}
+/* Fin del grid del index */

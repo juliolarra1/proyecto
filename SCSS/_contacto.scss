@@ -1,0 +1,80 @@
+/*Importaciones de los otros SCSS*/
+@import "cuerpo";
+@import "decoracion";
+@import "home";
+@import "institucion";
+@import "pie";
+@import "proyectos";
+@import "servicios";
+@import "base/variables";
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* Inicio de los estilos especificos de Contacto */
+.grid-container-contacto {
+    /* Habilitar la grilla*/
+    display: grid;
+    /*En segundo lugar, definir la  cantidad de columnas*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 22rem 20rem 20rem 20rem 29.5rem;
+    grid-column-gap: 0.5rem;
+    margin-top: 4rem;
+    grid-row-gap: 4rem;
+    grid-template-areas: 
+    '. contacto-1 contacto-2'
+    '. direccion-1 direccion-2'
+    '. email-1 email-2'
+    '. telefono-1 telefono-2'
+    'mapa-1 mapa-1 mapa-1';
+}
+.contacto-1 {
+    grid-area: contacto-1;
+    display: flex;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.contacto-2 {
+    grid-area: contacto-2;
+    display: flex;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.direccion-1 {
+    grid-area: direccion-1;
+    text-align: justify;
+}
+.direccion-2 {
+    grid-area: direccion-2;
+    text-align: justify;
+}
+.email-1 {
+    grid-area: email-1;
+    text-align: justify;
+}
+.email-2 {
+    grid-area: email-2;
+    text-align: justify;
+}
+.telefono-1 {
+    grid-area: telefono-1;
+    text-align: justify;
+}
+.telefono-2 {
+    grid-area: telefono-2;
+    text-align: justify;
+}
+.mapa-1 {
+    grid-area: mapa-1;
+    margin: 10px;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textos-centrados-alineados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Fin de los estilos especificos de Contacto */

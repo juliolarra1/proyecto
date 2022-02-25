@@ -1,0 +1,118 @@
+/*Importaciones de los otros SCSS*/
+@import "cuerpo";
+@import "contacto";
+@import "decoracion";
+@import "home";
+@import "institucion";
+@import "pie";
+@import "proyectos";
+@import "base/variables";
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+
+/* Inicio de los estilos especificos de Servicios */
+
+.grid-container-serv {
+    /* Habilitar la grilla*/
+    display: grid;
+    /*En segundo lugar, definir la  cantidad de columnas*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 4rem 6rem 26rem 6rem 26rem 6rem 26rem 6rem 26rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    grid-column-gap: 15px;
+    grid-row-gap: 6rem;
+    grid-template-areas: 
+    'serv-intro serv-intro serv-intro'
+    'titulo-obras-viales titulo-obras-viales titulo-obras-viales'
+    'camineria . pluviales'
+    'titulo-obras-urbanas titulo-obras-urbanas titulo-obras-urbanas'
+    'espacios-publicos agua-potable saneamiento'
+    'titulo-movimiento-tierra titulo-movimiento-tierra titulo-movimiento-tierra'
+    'lagos-tajamares movimiento-tierra fraccionamientos'
+    'titulo-otras-obras titulo-otras-obras titulo-otras-obras'
+    'arquitectura demoliciones jardines';
+}
+.serv-intro {
+    grid-area: serv-intro;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.titulo-obras-viales {
+    grid-area: titulo-obras-viales;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.camineria {
+    grid-area: camineria;
+    margin-right: 20px;
+    margin-left: 25px;
+    text-align: center;
+    
+}
+.pluviales {
+    grid-area: pluviales;
+    margin-right: 25px;
+    margin-left: 20px;
+    text-align: center;
+}
+.titulo-obras-urbanas {
+    grid-area: titulo-obras-urbanas;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.espacios-publicos {
+    grid-area: espacios-publicos;
+    text-align: center;
+}
+.agua-potable {
+    grid-area: agua-potable;
+    text-align: center;
+}
+.saneamiento {
+    grid-area: saneamiento;
+    text-align: center;
+}
+.titulo-movimiento-tierra {
+    grid-area: titulo-movimiento-tierra;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.lagos-tajamares {
+    grid-area: lagos-tajamares;
+    text-align: center;
+}
+.movimiento-tierra {
+    grid-area: movimiento-tierra;
+    text-align: center;
+}
+.fraccionamientos {
+    grid-area: fraccionamientos;
+    text-align: center;
+}
+.titulo-otras-obras {
+    grid-area: titulo-otras-obras;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.arquitectura {
+    grid-area: arquitectura;
+    text-align: center;
+}
+.demoliciones {
+    grid-area: demoliciones;
+    text-align: center;
+}
+.jardines {
+    grid-area: jardines;
+    text-align: center;
+}
+
+/* Fin de los estilos especificos de Servicios */

@@ -1,0 +1,75 @@
+/*Importaciones de los otros SCSS*/
+@import "cuerpo";
+@import "contacto";
+@import "decoracion";
+@import "home";
+@import "institucion";
+@import "proyectos";
+@import "servicios";
+@import "base/variables";
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+/*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
+.pie {
+    background-color: $color-contraste;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    padding-right: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.social {
+    background-color: $color-contraste;
+}
+.info-contacto {
+    background-color: $color-contraste;
+}
+.logo-superior {
+    width: 150px;
+    height: auto;
+}
+.logo-inferior {
+    background-color: $color-contraste;
+    margin: 1rem;
+    width: 6rem;
+    height: auto;
+    box-sizing: border-box;
+}
+.social-dim {
+    width: 60px;
+    height: auto;
+}
+/* Esta clase la use simplemente para definir un espacio entre los iconos inferiores que te llevan a las distintas redes sociales, con esto logre una separacion adecuada entre ellos*/
+.face {
+    margin: 10px;
+    padding-left: 0;
+}
+    
+/*Estas clases funcionan para definir el estilo de los botones que remplazan a los hipervinculos normales por algo mas creativo y con animacion propia*/
+.boton {
+    background: $color-blanco;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 22px;
+    border: 3px solid $color-texto-3;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+   }
+.boton:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+.boton:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+.box-shadow-img-body {
+    -webkit-box-shadow: 0px 4px 15px 4px rgba(0,0,0,0.84); 
+    box-shadow: 0px 4px 15px 4px rgba(0,0,0,0.84);
+}

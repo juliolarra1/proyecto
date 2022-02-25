@@ -1,0 +1,114 @@
+/*Importaciones de los otros SCSS*/
+@import "cuerpo";
+@import "contacto";
+@import "home";
+@import "institucion";
+@import "pie";
+@import "proyectos";
+@import "servicios";
+@import "base/variables";
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* Esta clase ayuda a definir la imagen de la portada y a ubicarla */
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Esta clase se define para eliminar lo que vendrian a ser los subrayados de los hipervinculos, ademas de definirles un tamaño apropiado*/
+.lista-1 {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: $color-contraste;
+}
+.lista-2 {
+    text-decoration: none;
+    background-color: $color-contraste;
+}
+/* Los texto-1 texto-2 texto-3 definen las fuentes a ser utilizadas en el archivo */
+.texto-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 45px;
+    color: $color-texto-1;
+    text-align: left;
+}
+.texto-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: $color-blanco;
+    background-size: cover;
+    background-color: $color-contraste;
+}
+.texto-3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: $color-texto-3;
+}
+.texto-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    color: $color-contraste;
+}
+.texto-5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-blanco;
+    background-color: $color-contraste;
+}
+
+/* Las clases de texto-explicando y los tipos hacen referencia a los textos centrales que estan al lado de las imagenes, los definen y a su vez indican si van de derecha a izquierda o de izquierda a derecha*/
+.texto-explicando-tipo-1 {
+    text-align: left;
+}
+.texto-explicando-tipo-2 {
+    text-align: right;
+}
+.texto-explicando-tipo-3 {
+    text-align: center;
+}
+
+
+
+
+/* Esta clase le da un tamaño especifico a las imagenes en el carousel*/
+.img-not {
+    width: 30rem;
+    height: 34rem;
+}
+
+.imagen-tamano {
+    width: 100%;
+    height: 60%;
+}
+
+/* Es un padding y margin para los textos del area del medio de la pagina, asi quedan mas separados de la imagen */
+.separado {
+    padding: 10px;
+    margin: 10px;
+}
+/* Esta clase sirve para darle a las imagenes del area del medio de la pagina un estilo y diseño */
+
+/*Codigo para hacerlo responsive*/
+
+.contenedor {
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
