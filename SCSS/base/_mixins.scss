@@ -1,9 +1,2 @@
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 
-@mixin nombre( $argumento : black) {
-    color: $argumento;
-}
-
-p{
-    @include nombre();
-}
