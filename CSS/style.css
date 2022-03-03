@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /*Importaciones de los otros SCSS*/
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 body {
   background-color: #FFFFFF;
@@ -19,6 +26,13 @@ body img {
 }
 
 /*Importaciones de los otros SCSS*/
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Contacto */
 .grid-container-contacto {
@@ -107,6 +121,13 @@ body img {
 
 /* Fin de los estilos especificos de Contacto */
 /*Importaciones de los otros SCSS*/
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Fuente */
 /* Esta clase ayuda a definir la imagen de la portada y a ubicarla */
@@ -219,6 +240,13 @@ body img {
 }
 
 /*Importaciones de los otros SCSS*/
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Este grid lo que contiene es toda la informacion central de index, aqui se definen las clases que lo componen y las areas que van a ocupar las mismas */
 .grid-container-index {
@@ -332,6 +360,13 @@ body img {
 
 /* Fin del grid del index */
 /*Importaciones de los otros SCSS*/
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Institucion */
 /* Definimos la grid del cuerpo de institucion */
@@ -459,6 +494,13 @@ body img {
 
 /* Fin de los estilos especificos de Institucion */
 /*Importaciones de los otros SCSS*/
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
 .pie {
@@ -540,6 +582,13 @@ body img {
 }
 
 /*Importaciones de los otros SCSS*/
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 .grid-container-proy {
   /* Habilitar la grilla*/
@@ -607,6 +656,13 @@ body img {
 
 /* Fin de los estilos especificos de Proyectos */
 /*Importaciones de los otros SCSS*/
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Servicios */
 .grid-container-serv {
@@ -724,6 +780,13 @@ body img {
 }
 
 /* Fin de los estilos especificos de Servicios */
+/*
+$color-contraste: #022047;
+$color-blanco: #FFFFFF;
+$color-texto-1: #005ca0;
+$color-texto-3: #858585;
+$color-div: #f5f5f5;
+*/
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 
 /*# sourceMappingURL=style.css.map */
