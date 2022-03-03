@@ -19,6 +19,7 @@ body img {
 }
 
 /*Importaciones de los otros SCSS*/
+/*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Contacto */
 .grid-container-contacto {
   /* Habilitar la grilla*/
@@ -30,6 +31,13 @@ body img {
   margin-top: 4rem;
   grid-row-gap: 4rem;
   grid-template-areas: ". contacto-1 contacto-2" ". direccion-1 direccion-2" ". email-1 email-2" ". telefono-1 telefono-2" "mapa-1 mapa-1 mapa-1";
+}
+@media (max-width: 1295px) {
+  .grid-container-contacto {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2rem;
+  }
 }
 
 .contacto-1 {
@@ -84,6 +92,11 @@ body img {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 480px) {
+  .mapa-1 {
+    display: none;
+  }
+}
 
 .textos-centrados-alineados {
   display: flex;
@@ -94,6 +107,7 @@ body img {
 
 /* Fin de los estilos especificos de Contacto */
 /*Importaciones de los otros SCSS*/
+/*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Fuente */
 /* Esta clase ayuda a definir la imagen de la portada y a ubicarla */
 .titulo {
@@ -138,6 +152,11 @@ body img {
   color: #FFFFFF;
   background-size: cover;
   background-color: #022047;
+}
+@media (max-width: 480px) {
+  .texto-2 {
+    font-size: 20px;
+  }
 }
 
 .texto-3 {
@@ -200,6 +219,7 @@ body img {
 }
 
 /*Importaciones de los otros SCSS*/
+/*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Este grid lo que contiene es toda la informacion central de index, aqui se definen las clases que lo componen y las areas que van a ocupar las mismas */
 .grid-container-index {
   /* Habilitar la grilla*/
@@ -211,6 +231,13 @@ body img {
   grid-column-gap: 0px;
   grid-row-gap: 10em;
   grid-template-areas: "texto-e img-e img-e" "img-c img-c texto-c" "texto-a img-a img-a" "img-n img-n texto-n";
+}
+@media (max-width: 1295px) {
+  .grid-container-index {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 1rem;
+  }
 }
 
 .text-empresa {
@@ -291,9 +318,21 @@ body img {
   margin-top: 4em;
   margin-bottom: 2em;
 }
+@media (max-width: 1295px) {
+  .not {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
+  .not {
+    display: none;
+  }
+}
 
 /* Fin del grid del index */
 /*Importaciones de los otros SCSS*/
+/*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Institucion */
 /* Definimos la grid del cuerpo de institucion */
 .grid-container-inst {
@@ -306,6 +345,18 @@ body img {
   grid-row-gap: 5rem;
   margin-top: 3rem;
   grid-template-areas: "img-inst-1 img-inst-2" "titulo-historia titulo-historia" "desarrollo-historia desarrollo-historia" "img-historia-1 img-historia-2" "mision img-mision" "vision img-vision" "valores img-valores" "titulo-eco titulo-eco" "desarrollo-eco desarrollo-eco" "img-eco img-eco";
+}
+@media (max-width: 1000px) {
+  .grid-container-inst {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .grid-container-inst {
+    grid-row-gap: 0rem;
+  }
 }
 
 .img-inst-1 {
@@ -408,6 +459,7 @@ body img {
 
 /* Fin de los estilos especificos de Institucion */
 /*Importaciones de los otros SCSS*/
+/*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
 .pie {
   background-color: #022047;
@@ -419,6 +471,13 @@ body img {
   padding-right: 15px;
   width: 100%;
   box-sizing: border-box;
+}
+@media (max-width: 1295px) {
+  .pie {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .social {
@@ -481,6 +540,7 @@ body img {
 }
 
 /*Importaciones de los otros SCSS*/
+/*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 .grid-container-proy {
   /* Habilitar la grilla*/
   display: grid;
@@ -492,6 +552,13 @@ body img {
   margin-bottom: 4rem;
   grid-row-gap: 6rem;
   grid-template-areas: "completados completados completados" "obr-comp-1 obr-comp-2 obr-comp-3" "en-proceso en-proceso en-proceso" "en-proceso-1 en-proceso-2 en-proceso-3";
+}
+@media (max-width: 1000px) {
+  .grid-container-proy {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2rem;
+  }
 }
 
 .completados {
@@ -540,6 +607,7 @@ body img {
 
 /* Fin de los estilos especificos de Proyectos */
 /*Importaciones de los otros SCSS*/
+/*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Servicios */
 .grid-container-serv {
   /* Habilitar la grilla*/
@@ -552,6 +620,13 @@ body img {
   grid-column-gap: 15px;
   grid-row-gap: 6rem;
   grid-template-areas: "serv-intro serv-intro serv-intro" "titulo-obras-viales titulo-obras-viales titulo-obras-viales" "camineria . pluviales" "titulo-obras-urbanas titulo-obras-urbanas titulo-obras-urbanas" "espacios-publicos agua-potable saneamiento" "titulo-movimiento-tierra titulo-movimiento-tierra titulo-movimiento-tierra" "lagos-tajamares movimiento-tierra fraccionamientos" "titulo-otras-obras titulo-otras-obras titulo-otras-obras" "arquitectura demoliciones jardines";
+}
+@media (max-width: 1000px) {
+  .grid-container-serv {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2rem;
+  }
 }
 
 .serv-intro {
@@ -650,75 +725,5 @@ body img {
 
 /* Fin de los estilos especificos de Servicios */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
-/* Media query general e index*/
-@media screen and (max-width: 1295px) {
-  .header-1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .grid-container-index {
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 1rem;
-  }
-
-  .not {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .pie {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /*Media query particular contacto*/
-  .grid-container-contacto {
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 2rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  /*Media query particular institucion*/
-  .grid-container-inst {
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 2rem;
-  }
-
-  /*Media query particular servicios*/
-  .grid-container-serv {
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 2rem;
-  }
-
-  /*Media query particular proyecto*/
-  .grid-container-proy {
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 2rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .not {
-    display: none;
-  }
-
-  .grid-container-inst {
-    grid-row-gap: 0rem;
-  }
-
-  .texto-2 {
-    font-size: 20px;
-  }
-
-  .mapa-1 {
-    display: none;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

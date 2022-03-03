@@ -1,2 +1,11 @@
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 
+@mixin telefono{
+    @media (max-width: 480px) { @content; }
+  }
+  @mixin tablet{
+    @media (max-width: 1000px) { @content; }
+  }
+  @mixin escritorio{
+    @media (max-width: 1295px) { @content; }
+  }

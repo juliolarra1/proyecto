@@ -1,6 +1,6 @@
 /*Importaciones de los otros SCSS*/
 @import "base/variables";
-
+@import "base/mixins";
 /* Inicio de los estilos especificos de Institucion */
 
 /* Definimos la grid del cuerpo de institucion */
@@ -24,6 +24,14 @@
     'titulo-eco titulo-eco'
     'desarrollo-eco desarrollo-eco'
     'img-eco img-eco';
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 2rem;
+    }
+    @include telefono {
+        grid-row-gap: 0rem;
+    }
 
 }
 .img-inst-1 {

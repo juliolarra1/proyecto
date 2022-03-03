@@ -1,5 +1,6 @@
 /*Importaciones de los otros SCSS*/
 @import "base/variables";
+@import "base/mixins";
 
 /* Inicio de los estilos especificos de Contacto */
 .grid-container-contacto {
@@ -17,6 +18,11 @@
     '. email-1 email-2'
     '. telefono-1 telefono-2'
     'mapa-1 mapa-1 mapa-1';
+    @include escritorio {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 2rem;
+    }
 }
 .contacto-1 {
     grid-area: contacto-1;
@@ -61,6 +67,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include telefono {
+        display: none;
+    }
 }
 .textos-centrados-alineados {
     display: flex;

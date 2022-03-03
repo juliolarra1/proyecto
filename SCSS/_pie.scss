@@ -1,5 +1,6 @@
 /*Importaciones de los otros SCSS*/
 @import "base/variables";
+@import "base/mixins";
 
 /*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
 .pie {
@@ -12,6 +13,12 @@
     padding-right: 15px;
     width: 100%;
     box-sizing: border-box;
+    @include escritorio {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;   
+    }
+    
 }
 .social {
     background-color: $color-contraste;

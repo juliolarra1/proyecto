@@ -1,5 +1,6 @@
 /*Importaciones de los otros SCSS*/
 @import "base/variables";
+@import "base/mixins";
 /* Fuente */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
@@ -44,6 +45,9 @@
     color: $color-blanco;
     background-size: cover;
     background-color: $color-contraste;
+    @include telefono {
+        font-size: 20px;
+    }
 }
 .texto-3 {
     font-family: 'Montserrat', sans-serif;

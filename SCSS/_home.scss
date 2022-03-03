@@ -1,6 +1,6 @@
 /*Importaciones de los otros SCSS*/
 @import "base/variables";
-
+@import "base/mixins";
 
 /* Este grid lo que contiene es toda la informacion central de index, aqui se definen las clases que lo componen y las areas que van a ocupar las mismas */
 .grid-container-index {
@@ -17,7 +17,11 @@
     'img-c img-c texto-c'
     'texto-a img-a img-a'
     'img-n img-n texto-n';
-
+    @include escritorio {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 1rem;
+    }
 }
 
 .text-empresa {
@@ -90,6 +94,13 @@
     align-items: center;
     margin-top: 4em;
     margin-bottom: 2em;
+    @include escritorio {
+        display: flex;
+        flex-direction: column;
+    }
+    @include tablet {
+        display: none;
+    }
 
 }
 /* Fin del grid del index */

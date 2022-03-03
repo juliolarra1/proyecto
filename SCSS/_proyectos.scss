@@ -1,5 +1,6 @@
 /*Importaciones de los otros SCSS*/
 @import "base/variables";
+@import "base/mixins";
 
 .grid-container-proy {
     /* Habilitar la grilla*/
@@ -16,6 +17,11 @@
     'obr-comp-1 obr-comp-2 obr-comp-3'
     'en-proceso en-proceso en-proceso'
     'en-proceso-1 en-proceso-2 en-proceso-3';
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 2rem;
+    }
 }
 .completados {
     grid-area: completados;
