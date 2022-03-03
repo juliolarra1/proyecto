@@ -5,7 +5,7 @@
 
 /*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
 .pie {
-    background-color: $color-contraste;
+    background-color: map-get($colores, color-contraste);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,17 +22,17 @@
     
 }
 .social {
-    background-color: $color-contraste;
+    background-color: map-get($colores, color-contraste);
 }
 .info-contacto {
-    background-color: $color-contraste;
+    background-color: map-get($colores, color-contraste);
 }
 .logo-superior {
     width: 150px;
     height: auto;
 }
 .logo-inferior {
-    background-color: $color-contraste;
+    background-color: map-get($colores, color-contraste);
     margin: 1rem;
     width: 6rem;
     height: auto;
@@ -50,12 +50,12 @@
     
 /*Estas clases funcionan para definir el estilo de los botones que remplazan a los hipervinculos normales por algo mas creativo y con animacion propia*/
 .boton {
-    background: $color-blanco;
+    background: map-get($colores, color-blanco);
     font-family: inherit;
     padding: 0.6em 1.3em;
     font-weight: 900;
     font-size: 22px;
-    border: 3px solid $color-texto-3;
+    border: 3px solid map-get($colores, color-texto-3);
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
    }

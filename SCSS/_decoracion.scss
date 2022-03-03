@@ -23,11 +23,11 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 20px;
-    color: $color-contraste;
+    color: map-get($colores, color-contraste);
 }
 .lista-2 {
     text-decoration: none;
-    background-color: $color-contraste;
+    background-color: map-get($colores, color-contraste);
 }
 /* Los texto-1 texto-2 texto-3 definen las fuentes a ser utilizadas en el archivo */
 .texto-1 {
@@ -35,16 +35,16 @@
     font-weight: 600;
     text-decoration: underline;
     font-size: 45px;
-    color: $color-texto-1;
+    color: map-get($colores, color-texto-1);
     text-align: left;
 }
 .texto-2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 40px;
-    color: $color-blanco;
+    color: map-get($colores, color-blanco);
     background-size: cover;
-    background-color: $color-contraste;
+    background-color: map-get($colores, color-contraste);
     @include telefono {
         font-size: 20px;
     }
@@ -53,20 +53,20 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 26px;
-    color: $color-texto-3;
+    color: map-get($colores, color-texto-3);
 }
 .texto-4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 15.5px;
-    color: $color-contraste;
+    color: map-get($colores, color-contraste);
 }
 .texto-5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    color: $color-blanco;
-    background-color: $color-contraste;
+    color: map-get($colores, color-blanco);
+    background-color: map-get($colores, color-contraste);
 }
 
 /* Las clases de texto-explicando y los tipos hacen referencia a los textos centrales que estan al lado de las imagenes, los definen y a su vez indican si van de derecha a izquierda o de izquierda a derecha*/
