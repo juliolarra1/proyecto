@@ -62,6 +62,7 @@
 .boton {
     background: map-get($colores, color-blanco);
     font-family: inherit;
+    padding: 0.5em;
     font-weight: 900;
     font-size: 22px;
     border: 3px solid map-get($colores, color-texto-3);
