@@ -621,13 +621,6 @@ body img {
   grid-row-gap: 6rem;
   grid-template-areas: "serv-intro serv-intro serv-intro" "titulo-obras-viales titulo-obras-viales titulo-obras-viales" "camineria . pluviales" "titulo-obras-urbanas titulo-obras-urbanas titulo-obras-urbanas" "espacios-publicos agua-potable saneamiento" "titulo-movimiento-tierra titulo-movimiento-tierra titulo-movimiento-tierra" "lagos-tajamares movimiento-tierra fraccionamientos" "titulo-otras-obras titulo-otras-obras titulo-otras-obras" "arquitectura demoliciones jardines";
 }
-@media (max-width: 1000px) {
-  .grid-container-serv {
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 2rem;
-  }
-}
 
 .serv-intro {
   grid-area: serv-intro;
