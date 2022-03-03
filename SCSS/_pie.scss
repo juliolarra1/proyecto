@@ -33,7 +33,7 @@
 }
 .logo-inferior {
     background-color: map-get($colores, color-contraste);
-    margin: 1rem;
+    
     width: 6rem;
     height: auto;
     box-sizing: border-box;
@@ -52,7 +52,6 @@
 .boton {
     background: map-get($colores, color-blanco);
     font-family: inherit;
-    padding: 0.6em 1.3em;
     font-weight: 900;
     font-size: 22px;
     border: 3px solid map-get($colores, color-texto-3);
