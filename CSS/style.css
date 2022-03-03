@@ -651,7 +651,7 @@ body img {
 /* Fin de los estilos especificos de Servicios */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 p {
-  color: #005ca0;
+  color: black;
 }
 
 /* Media query general e index*/
