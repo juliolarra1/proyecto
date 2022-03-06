@@ -10,4 +10,7 @@
 @import "base/variables";
 @import "base/mixins";
 
-
+.navbar-justify {
+    display: flex;
+    justify-content: flex-end;
+}
