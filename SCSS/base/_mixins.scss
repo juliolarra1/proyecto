@@ -3,10 +3,13 @@
 @mixin telefono{
     @media (max-width: 480px) { @content; }
   }
-  @mixin tablet{
-    @media (max-width: 1000px) { @content; }
+@mixin tablet{
+    @media (max-width: 991px) { @content; }
   }
-  @mixin escritorio{
+@mixin escritorio{
     @media (max-width: 1295px) { @content; }
+  }
+@mixin escritorio-grande{
+  @media (min-width: 992px) { @content; }
   }
   

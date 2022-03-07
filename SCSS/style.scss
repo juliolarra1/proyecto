@@ -18,4 +18,28 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-left: 4em;
+    padding-top: 3em;
+    @include tablet {
+        padding-left: 0em;
+        padding-top: 0em;
+    }
+}
+
+.fondo-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/portada-2.jpg");
+    padding-top: 4em;
+    padding-bottom: 12em;
+    padding-left: 6em;
+    padding-right: 6em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @include tablet {
+        background-image: none;
+        padding: 1em;
+    }
+}
+.fondo-header-no {
+    background: none;
 }

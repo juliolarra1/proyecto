@@ -15,7 +15,23 @@
     width: 100%;
     box-sizing: border-box;
 }
-
+.text-nav-normal {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: map-get($colores, color-blanco);
+    margin-right: 0.5em;
+    @include tablet {
+        color: map-get($colores, color-texto-1);
+    }
+}
+.active {
+    color: map-get($colores, color-texto-1);
+    @include tablet {
+        color: map-get($colores, color-contraste);
+    }
+}
 
 /* Esta clase se define para eliminar lo que vendrian a ser los subrayados de los hipervinculos, ademas de definirles un tamaño apropiado*/
 .lista-1 {
@@ -34,9 +50,18 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-decoration: underline;
-    font-size: 45px;
+    font-size: 30px;
     color: map-get($colores, color-texto-1);
     text-align: left;
+    @include escritorio {
+        font-size: 25px;
+    }
+    @include telefono {
+        font-size: 14px;
+    }
+    @include tablet {
+        font-size: 20px;
+    }
 }
 .texto-2 {
     font-family: 'Montserrat', sans-serif;
