@@ -1,6 +1,7 @@
 /*Importaciones de los otros SCSS*/
 @import "base/variables";
 @import "base/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 /* Inicio de los estilos especificos de Contacto */
 .grid-container-contacto {
@@ -8,15 +9,15 @@
     display: grid;
     /*En segundo lugar, definir la  cantidad de columnas*/
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 22rem 20rem 20rem 20rem 29.5rem;
+    grid-template-rows: 22rem 9rem 9rem 9rem 29.5rem;
     grid-column-gap: 0.5rem;
     margin-top: 4rem;
     grid-row-gap: 4rem;
     grid-template-areas: 
     '. contacto-1 contacto-2'
-    '. direccion-1 direccion-2'
-    '. email-1 email-2'
-    '. telefono-1 telefono-2'
+    '. formulario formulario'
+    '. formulario formulario'
+    '. formulario formulario'
     'mapa-1 mapa-1 mapa-1';
     @include escritorio {
         display: flex;
@@ -30,37 +31,74 @@
     display: flex;
     box-sizing: border-box;
     text-align: justify;
+    border-radius: 10px;
 }
 .contacto-2 {
     grid-area: contacto-2;
     display: flex;
     box-sizing: border-box;
     text-align: justify;
+    border-radius: 10px;
 }
-.direccion-1 {
-    grid-area: direccion-1;
-    text-align: justify;
+.formulario {
+    grid-area: formulario;
+
 }
-.direccion-2 {
-    grid-area: direccion-2;
-    text-align: justify;
+form {
+    font-family: 'Montserrat', sans-serif;
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    background: map-get($colores, color-texto-3);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
 }
-.email-1 {
-    grid-area: email-1;
-    text-align: justify;
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: map-get($colores, color-blanco);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
-.email-2 {
-    grid-area: email-2;
-    text-align: justify;
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
 }
-.telefono-1 {
-    grid-area: telefono-1;
-    text-align: justify;
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
 }
-.telefono-2 {
-    grid-area: telefono-2;
-    text-align: justify;
+#boton {
+    background: map-get($colores, color-contraste);
+    color: map-get($colores, color-blanco);
+    padding: 20px;
 }
+#boton:hover {
+    cursor: pointer;
+}
+@include escritorio {
+    form {
+        width: 100%;
+    }
+}
+@include telefono {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+
 .mapa-1 {
     grid-area: mapa-1;
     margin: 10px;
