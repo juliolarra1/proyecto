@@ -300,10 +300,6 @@ body img {
   background: none;
 }
 
-.fondo-body {
-  background-color: #FFFFFF;
-}
-
 /*Importaciones de los otros SCSS*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
