@@ -3,7 +3,7 @@
 /* Mapa */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 body {
-  background-color: #f5f5f5;
+  background-color: #868c96;
 }
 body nav {
   margin: 6px;
@@ -11,7 +11,7 @@ body nav {
   list-style: none;
 }
 body div {
-  background-color: #FFFFFF;
+  background-color: #f5f5f5;
 }
 body img {
   width: 100%;

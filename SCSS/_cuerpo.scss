@@ -3,14 +3,14 @@
 
 
 body {
-    background-color: map-get($colores, color-div);
+    background-color: map-get($colores, color-fondo);
     nav {
         margin: 6px;
         padding-bottom: 10px;
         list-style: none;
     }
     div {
-        background-color: map-get($colores, color-blanco);
+        background-color: map-get($colores, color-div);
     }
     img {
         width: 100%;
