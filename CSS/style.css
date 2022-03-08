@@ -1,16 +1,9 @@
 @charset "UTF-8";
 /*Importaciones de los otros SCSS*/
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 body {
-  background-color: #FFFFFF;
+  background-color: #f5f5f5;
 }
 body nav {
   margin: 6px;
@@ -18,7 +11,7 @@ body nav {
   list-style: none;
 }
 body div {
-  background-color: #f5f5f5;
+  background-color: #FFFFFF;
 }
 body img {
   width: 100%;
@@ -27,13 +20,6 @@ body img {
 }
 
 /*Importaciones de los otros SCSS*/
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Contacto */
@@ -123,13 +109,6 @@ $color-div: #f5f5f5;
 
 /* Fin de los estilos especificos de Contacto */
 /*Importaciones de los otros SCSS*/
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Fuente */
@@ -280,6 +259,7 @@ $color-div: #f5f5f5;
   overflow: hidden;
 }
 
+/*Estilos Header*/
 .navbar-justify {
   display: flex;
   justify-content: flex-end;
@@ -320,14 +300,11 @@ $color-div: #f5f5f5;
   background: none;
 }
 
+.fondo-body {
+  background-color: #FFFFFF;
+}
+
 /*Importaciones de los otros SCSS*/
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Este grid lo que contiene es toda la informacion central de index, aqui se definen las clases que lo componen y las areas que van a ocupar las mismas */
@@ -442,13 +419,6 @@ $color-div: #f5f5f5;
 
 /* Fin del grid del index */
 /*Importaciones de los otros SCSS*/
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Institucion */
@@ -577,13 +547,6 @@ $color-div: #f5f5f5;
 
 /* Fin de los estilos especificos de Institucion */
 /*Importaciones de los otros SCSS*/
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /*Esta clase practicamente define el estilo del footer, agrega bordes, colores y sombras*/
@@ -680,13 +643,6 @@ $color-div: #f5f5f5;
 }
 
 /*Importaciones de los otros SCSS*/
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 .grid-container-proy {
@@ -754,13 +710,6 @@ $color-div: #f5f5f5;
 
 /* Fin de los estilos especificos de Proyectos */
 /*Importaciones de los otros SCSS*/
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 /* Inicio de los estilos especificos de Servicios */
@@ -879,13 +828,6 @@ $color-div: #f5f5f5;
 }
 
 /* Fin de los estilos especificos de Servicios */
-/*
-$color-contraste: #022047;
-$color-blanco: #FFFFFF;
-$color-texto-1: #005ca0;
-$color-texto-3: #858585;
-$color-div: #f5f5f5;
-*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
 
