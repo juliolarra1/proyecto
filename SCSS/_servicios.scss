@@ -10,7 +10,7 @@
     display: grid;
     /*En segundo lugar, definir la  cantidad de columnas*/
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 4rem 6rem 26rem 6rem 26rem 6rem 26rem 6rem 26rem;
+    grid-template-rows: 8rem 6rem 26rem 6rem 26rem 6rem 26rem 6rem 26rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
     grid-column-gap: 15px;
@@ -34,9 +34,9 @@
 }
 .serv-intro {
     grid-area: serv-intro;
+    display: flex;
+    box-sizing: border-box;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 .titulo-obras-viales {
     grid-area: titulo-obras-viales;
