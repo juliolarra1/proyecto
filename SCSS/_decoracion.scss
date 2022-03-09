@@ -77,7 +77,7 @@
 .texto-3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 24px;
     color: map-get($colores, color-texto-3);
 }
 .texto-4 {
@@ -92,6 +92,12 @@
     font-size: 16px;
     color: map-get($colores, color-blanco);
     background-color: map-get($colores, color-contraste);
+}
+.texto-6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: map-get($colores, color-contraste);
 }
 
 /* Las clases de texto-explicando y los tipos hacen referencia a los textos centrales que estan al lado de las imagenes, los definen y a su vez indican si van de derecha a izquierda o de izquierda a derecha*/
@@ -132,8 +138,6 @@
 .contenedor {
     width: 100%;
     overflow: hidden;
-    
-    
 }
 
 /*Estilos Header*/

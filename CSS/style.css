@@ -237,7 +237,7 @@ textarea {
 .texto-3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 24px;
   color: #868c96;
 }
 
@@ -254,6 +254,13 @@ textarea {
   font-size: 16px;
   color: #FFFFFF;
   background-color: #022047;
+}
+
+.texto-6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #022047;
 }
 
 /* Las clases de texto-explicando y los tipos hacen referencia a los textos centrales que estan al lado de las imagenes, los definen y a su vez indican si van de derecha a izquierda o de izquierda a derecha*/
@@ -449,7 +456,12 @@ textarea {
   grid-column: 2/4;
   grid-row: 2/3;
   display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  display: inline-block;
 }
 
 /*Fin grid container index 1*/
@@ -474,7 +486,12 @@ textarea {
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  display: inline-block;
 }
 
 .grid-container-index-2 .img-a-1:nth-child(2) {
@@ -524,7 +541,12 @@ textarea {
   grid-column: 2/4;
   grid-row: 2/3;
   display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  display: inline-block;
 }
 
 /*La clase not lo que define es la parte de noticias, le dice como debe ubicarse para que cada cuadro de noticias este proporcional en comparacion al otro*/

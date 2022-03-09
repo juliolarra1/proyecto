@@ -72,7 +72,12 @@
     grid-column: 2/4;
     grid-row: 2/3;
     display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: inline-block;
 }
 /*Fin grid container index 1*/
 
@@ -96,7 +101,12 @@
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: inline-block;
 }
 
 .grid-container-index-2 .img-a-1:nth-child(2) {
@@ -142,7 +152,12 @@
     grid-column: 2/4;
     grid-row: 2/3;
     display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: inline-block;
 }
 
 
