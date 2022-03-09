@@ -173,3 +173,28 @@
 .fondo-header-no {
     background: none;
 }
+.mostrar {
+    visibility: hidden;
+    @include escritorio {
+        visibility: visible;
+    }
+}
+.fondo-index-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/ing-civil.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @include escritorio {
+        display: none;
+    }
+}
+
+.fondo-index-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/resumen.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @include escritorio {
+        display: none;
+    }
+}
