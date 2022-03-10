@@ -29,17 +29,17 @@ body img {
   display: grid;
   /*En segundo lugar, definir la  cantidad de columnas*/
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 22rem 9rem 9rem 9rem 29.5rem;
+  grid-template-rows: 16rem 9rem 9rem 9rem 6rem 29.5rem;
   grid-column-gap: 0.5rem;
   margin-top: 4rem;
   grid-row-gap: 4rem;
-  grid-template-areas: ". contacto-1 contacto-2" ". formulario formulario" ". formulario formulario" ". formulario formulario" "mapa-1 mapa-1 mapa-1";
+  grid-template-areas: ". contacto-1 contacto-2" ". formulario formulario" ". formulario formulario" ". formulario formulario" "titu-cont titu-cont titu-cont" "mapa-1 mapa-1 mapa-1";
 }
 @media (max-width: 1295px) {
   .grid-container-contacto {
     display: flex;
     flex-direction: column;
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
   }
 }
 
@@ -120,6 +120,18 @@ textarea {
     font-size: 20px;
   }
 }
+.titu-cont {
+  grid-area: titu-cont;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .titu-cont h2 {
+    font-size: 16px;
+  }
+}
+
 .mapa-1 {
   grid-area: mapa-1;
   margin: 10px;
@@ -261,6 +273,20 @@ textarea {
   font-weight: 500;
   font-size: 28px;
   color: #022047;
+}
+
+.texto-7 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #022047;
+  background-size: cover;
+  background-color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .texto-7 {
+    font-size: 16px;
+  }
 }
 
 /* Las clases de texto-explicando y los tipos hacen referencia a los textos centrales que estan al lado de las imagenes, los definen y a su vez indican si van de derecha a izquierda o de izquierda a derecha*/
@@ -765,8 +791,22 @@ textarea {
 
 /* Esta clase la use simplemente para definir un espacio entre los iconos inferiores que te llevan a las distintas redes sociales, con esto logre una separacion adecuada entre ellos*/
 .face {
-  margin: 10px;
+  margin: 15px;
   padding-left: 0;
+}
+@media (max-width: 480px) {
+  .face {
+    margin: 0;
+  }
+}
+
+.inst {
+  margin-left: 5px;
+}
+@media (max-width: 480px) {
+  .inst {
+    margin: 0;
+  }
 }
 
 /*Estas clases funcionan para definir el estilo de los botones que remplazan a los hipervinculos normales por algo mas creativo y con animacion propia*/

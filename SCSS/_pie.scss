@@ -54,8 +54,17 @@
 }
 /* Esta clase la use simplemente para definir un espacio entre los iconos inferiores que te llevan a las distintas redes sociales, con esto logre una separacion adecuada entre ellos*/
 .face {
-    margin: 10px;
+    margin: 15px;
     padding-left: 0;
+    @include telefono {   
+        margin: 0;
+    }
+}
+.inst {
+    margin-left: 5px;
+    @include telefono {   
+        margin: 0;
+    }
 }
     
 /*Estas clases funcionan para definir el estilo de los botones que remplazan a los hipervinculos normales por algo mas creativo y con animacion propia*/
