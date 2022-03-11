@@ -10,8 +10,7 @@
     display: grid;
     /*En segundo lugar, definir la  cantidad de columnas*/
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30rem 10rem 10rem 30rem 30rem 30rem 30rem 10rem 15rem 30rem;
-    grid-column-gap: 0px;
+    grid-template-rows: 30rem 7rem 14rem 30rem 20rem 20rem 28rem 7rem 15rem 30rem;
     grid-row-gap: 5rem;
     margin-top: 3rem;
     grid-template-areas: 
@@ -53,6 +52,7 @@
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+    background-color: map-get($colores, color-contraste);
 }
 .desarrollo-historia {
     grid-area: desarrollo-historia;
@@ -74,9 +74,11 @@
 }
 .mision {
     grid-area: mision;
+    padding: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: inline;
 }
 .img-mision {
     grid-area: img-mision;
@@ -86,9 +88,11 @@
 }
 .vision {
     grid-area: vision;
+    padding: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: inline;
 }
 .img-vision {
     grid-area: img-vision;
@@ -98,9 +102,11 @@
 }
 .valores {
     grid-area: valores;
+    padding: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: inline;
 }
 .img-valores {
     grid-area: img-valores;
@@ -115,6 +121,7 @@
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+    background-color: map-get($colores, color-contraste);
 }
 .desarrollo-eco {
     grid-area: desarrollo-eco;
@@ -124,7 +131,7 @@
 }
 .img-eco {
     grid-area: img-eco;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     display: flex;
     box-sizing: border-box;
     

@@ -213,3 +213,13 @@
         display: none;
     }
 }
+
+.fondo-comp-eco {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/compromiso-eco.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @include escritorio {
+        display: none;
+    }
+}

@@ -401,6 +401,18 @@ textarea {
   }
 }
 
+.fondo-comp-eco {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/compromiso-eco.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media (max-width: 1295px) {
+  .fondo-comp-eco {
+    display: none;
+  }
+}
+
 /*Importaciones de los otros SCSS*/
 /* Mapa */
 /*Permite agregar un parametro vacio al cual le voy a dar un valor en el futuro*/
@@ -608,8 +620,7 @@ textarea {
   display: grid;
   /*En segundo lugar, definir la  cantidad de columnas*/
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 30rem 10rem 10rem 30rem 30rem 30rem 30rem 10rem 15rem 30rem;
-  grid-column-gap: 0px;
+  grid-template-rows: 30rem 7rem 14rem 30rem 20rem 20rem 28rem 7rem 15rem 30rem;
   grid-row-gap: 5rem;
   margin-top: 3rem;
   grid-template-areas: "img-inst-1 img-inst-2" "titulo-historia titulo-historia" "desarrollo-historia desarrollo-historia" "img-historia-1 img-historia-2" "mision img-mision" "vision img-vision" "valores img-valores" "titulo-eco titulo-eco" "desarrollo-eco desarrollo-eco" "img-eco img-eco";
@@ -644,6 +655,7 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #022047;
 }
 
 .desarrollo-historia {
@@ -667,9 +679,11 @@ textarea {
 
 .mision {
   grid-area: mision;
+  padding: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: inline;
 }
 
 .img-mision {
@@ -680,9 +694,11 @@ textarea {
 
 .vision {
   grid-area: vision;
+  padding: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: inline;
 }
 
 .img-vision {
@@ -693,9 +709,11 @@ textarea {
 
 .valores {
   grid-area: valores;
+  padding: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: inline;
 }
 
 .img-valores {
@@ -709,6 +727,7 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #022047;
 }
 
 .desarrollo-eco {
@@ -720,7 +739,7 @@ textarea {
 
 .img-eco {
   grid-area: img-eco;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   display: flex;
   box-sizing: border-box;
 }
