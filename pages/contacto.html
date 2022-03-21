@@ -81,13 +81,13 @@
                 <!-- Fin section Resumen -->
 
                 <!-- Section Formulario -->
-            <form action="" class="formulario">
+            <form action="enviar.php" method="post" class="formulario">
                 <h2>ENVÍENOS SU MENSAJE</h2>
-                <input type="text" name="Nombre" placeholder="Nombre">
-                <input type="text" name="correo" placeholder="Correo">
-                <input type="text" name="telefono" placeholder="Teléfono">
-                <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
-                <input type="button" value="ENVIAR" id="boton">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="correo" placeholder="Correo" required>
+                <input type="text" name="telefono" placeholder="Teléfono" required>
+                <textarea name="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+                <input type="submit" value="ENVIAR" id="boton">
             </form>
 
 
