@@ -303,6 +303,31 @@ textarea {
   text-align: center;
 }
 
+/*
+TEXTO PRUEBA
+.texto-p1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: map-get($colores, color-contraste);
+}
+.texto-p2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: map-get($colores, color-texto-3);
+}
+.separado-p1 {
+    padding: 0;
+    margin: 0px;
+    text-align: center;
+}
+.separado-p2 {
+    padding-left: 6px;
+    margin: 0px;
+    text-align: center;
+}
+*/
 /* Esta clase le da un tamaño especifico a las imagenes en el carousel*/
 .img-not {
   width: 30rem;
@@ -412,6 +437,12 @@ textarea {
   .fondo-comp-eco {
     display: none;
   }
+}
+
+.sombra-caja {
+  -webkit-box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 /*Importaciones de los otros SCSS*/
@@ -558,7 +589,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr;
   grid-template-rows: 0.5fr 1fr 0.5fr;
-  margin-top: 10em;
+  margin-top: 11em;
   border-top: 25px solid #08A660;
   border-bottom: 25px solid #08A660;
   grid-template-areas: "img-numeros img-numeros text-numeros";
