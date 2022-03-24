@@ -10,9 +10,10 @@
     display: grid;
     /*En segundo lugar, definir la  cantidad de columnas*/
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30rem 7rem 14rem 30rem 20rem 20rem 28rem 7rem 15rem 30rem;
-    grid-row-gap: 5rem;
+    grid-template-rows: 30rem 7rem 14rem 30rem 20rem 20rem 28rem 7rem 30rem;
+    grid-row-gap: 0rem;
     margin-top: 3rem;
+    margin-bottom: 3em;
     grid-template-areas: 
     'img-inst-1 img-inst-2'
     'titulo-historia titulo-historia'
@@ -22,8 +23,7 @@
     'vision img-vision'
     'valores img-valores'
     'titulo-eco titulo-eco'
-    'desarrollo-eco desarrollo-eco'
-    'img-eco img-eco';
+    'desarrollo-eco desarrollo-eco';
     @include tablet {
         display: flex;
         flex-direction: column;
@@ -128,13 +128,18 @@
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-}
-.img-eco {
-    grid-area: img-eco;
-    margin-bottom: 3em;
-    display: flex;
-    box-sizing: border-box;
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/compromiso-eco.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: map-get($colores, color-blanco);
+    @include escritorio {
+        background-image: none;
+        color: map-get($colores, color-texto-3);
+    }
 }
 
 /* Fin de los estilos especificos de Institucion */

@@ -456,7 +456,7 @@ TEXTO PRUEBA
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 26rem;
   margin-top: 6em;
-  border: 25px solid #f5f5f5;
+  border: 2em solid #f5f5f5;
   grid-column-gap: 0px;
   grid-row-gap: 10em;
   grid-template-areas: "texto-e img-e img-e";
@@ -590,8 +590,8 @@ TEXTO PRUEBA
   grid-template-columns: 1fr 0.5fr 1fr;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   margin-top: 11em;
-  border-top: 25px solid #08A660;
-  border-bottom: 25px solid #08A660;
+  border-top: 2em solid #08A660;
+  border-bottom: 2em solid #08A660;
   grid-template-areas: "img-numeros img-numeros text-numeros";
 }
 @media (max-width: 1295px) {
@@ -884,10 +884,11 @@ a:hover {
   display: grid;
   /*En segundo lugar, definir la  cantidad de columnas*/
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 30rem 7rem 14rem 30rem 20rem 20rem 28rem 7rem 15rem 30rem;
-  grid-row-gap: 5rem;
+  grid-template-rows: 30rem 7rem 14rem 30rem 20rem 20rem 28rem 7rem 30rem;
+  grid-row-gap: 0rem;
   margin-top: 3rem;
-  grid-template-areas: "img-inst-1 img-inst-2" "titulo-historia titulo-historia" "desarrollo-historia desarrollo-historia" "img-historia-1 img-historia-2" "mision img-mision" "vision img-vision" "valores img-valores" "titulo-eco titulo-eco" "desarrollo-eco desarrollo-eco" "img-eco img-eco";
+  margin-bottom: 3em;
+  grid-template-areas: "img-inst-1 img-inst-2" "titulo-historia titulo-historia" "desarrollo-historia desarrollo-historia" "img-historia-1 img-historia-2" "mision img-mision" "vision img-vision" "valores img-valores" "titulo-eco titulo-eco" "desarrollo-eco desarrollo-eco";
 }
 @media (max-width: 991px) {
   .grid-container-inst {
@@ -999,13 +1000,20 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/compromiso-eco.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
 }
-
-.img-eco {
-  grid-area: img-eco;
-  margin-bottom: 3em;
-  display: flex;
-  box-sizing: border-box;
+@media (max-width: 1295px) {
+  .desarrollo-eco {
+    background-image: none;
+    color: #868c96;
+  }
 }
 
 /* Fin de los estilos especificos de Institucion */

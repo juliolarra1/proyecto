@@ -11,7 +11,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 26rem;
     margin-top: 6em;
-    border: 25px solid map-get($colores, color-div);
+    border: 2em solid map-get($colores, color-div);
     grid-column-gap: 0px;
     grid-row-gap: 10em;
     grid-template-areas: 
@@ -134,8 +134,8 @@
     grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-rows: 0.5fr 1fr 0.5fr;
     margin-top: 11em;
-    border-top: 25px solid map-get($colores, color-verde);
-    border-bottom: 25px solid map-get($colores, color-verde);
+    border-top: 2em solid map-get($colores, color-verde);
+    border-bottom: 2em solid map-get($colores, color-verde);
     grid-template-areas: 
     'img-numeros img-numeros text-numeros';
     @include escritorio {
@@ -156,6 +156,7 @@
     grid-row: 1/4;
     display: flex;
     box-sizing: border-box;
+    
 }
 
 .grid-container-index-3 .text-numeros:nth-child(3) {
