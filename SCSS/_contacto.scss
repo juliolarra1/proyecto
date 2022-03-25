@@ -127,4 +127,17 @@ textarea {
     align-items: center;
     text-align: center;
 }
+.textos-izquierda-alineados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.img-cont-var {
+    width: 35px;
+    height: auto;
+    @include telefono {
+        display: none;
+    }
+}
 /* Fin de los estilos especificos de Contacto */

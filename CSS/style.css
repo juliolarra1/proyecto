@@ -154,6 +154,23 @@ textarea {
   text-align: center;
 }
 
+.textos-izquierda-alineados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.img-cont-var {
+  width: 35px;
+  height: auto;
+}
+@media (max-width: 480px) {
+  .img-cont-var {
+    display: none;
+  }
+}
+
 /* Fin de los estilos especificos de Contacto */
 /*Importaciones de los otros SCSS*/
 /* Mapa */
