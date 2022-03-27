@@ -38,13 +38,17 @@
     grid-area: img-inst-1;
     display: flex;
     box-sizing: border-box;
-    
+    @include tablet {
+        display: none
+    }
 }
 .img-inst-2 {
     grid-area: img-inst-2;
     display: flex;
     box-sizing: border-box;
-    
+    @include tablet {
+        display: none
+    }
     
 }
 .titulo-historia {
@@ -53,6 +57,7 @@
     justify-content:space-evenly;
     align-items: center;
     background-color: map-get($colores, color-contraste);
+    margin-top: 3rem;
 }
 .desarrollo-historia {
     grid-area: desarrollo-historia;

@@ -156,7 +156,7 @@ textarea {
 
 .textos-izquierda-alineados {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: left;
 }
@@ -269,6 +269,11 @@ textarea {
   font-weight: 400;
   font-size: 24px;
   color: #868c96;
+}
+@media (max-width: 480px) {
+  .texto-3 {
+    font-size: 16px;
+  }
 }
 
 .texto-4 {
@@ -420,6 +425,24 @@ TEXTO PRUEBA
   }
 }
 
+.mostrar-1 {
+  display: none;
+}
+@media (max-width: 991px) {
+  .mostrar-1 {
+    display: inline;
+  }
+}
+
+.no-mostrar {
+  visibility: visible;
+}
+@media (max-width: 991px) {
+  .no-mostrar {
+    display: none;
+  }
+}
+
 .fondo-index-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/ing-civil.jpg");
   background-repeat: no-repeat;
@@ -508,7 +531,7 @@ TEXTO PRUEBA
 .grid-container-index-1 {
   /* Habilitar la grilla*/
   display: grid;
-  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-columns: 0.7fr 0.3fr 0.7fr;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   margin-top: 10em;
   grid-template-areas: "texto-e img-e img-e";
@@ -925,11 +948,21 @@ a:hover {
   display: flex;
   box-sizing: border-box;
 }
+@media (max-width: 991px) {
+  .img-inst-1 {
+    display: none;
+  }
+}
 
 .img-inst-2 {
   grid-area: img-inst-2;
   display: flex;
   box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .img-inst-2 {
+    display: none;
+  }
 }
 
 .titulo-historia {
@@ -938,6 +971,7 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
   background-color: #022047;
+  margin-top: 3rem;
 }
 
 .desarrollo-historia {

@@ -79,6 +79,9 @@
     font-weight: 400;
     font-size: 24px;
     color: map-get($colores, color-texto-3);
+    @include telefono {
+        font-size: 16px;
+    }
 }
 .texto-4 {
     font-family: 'Montserrat', sans-serif;
@@ -214,6 +217,18 @@ TEXTO PRUEBA
     visibility: hidden;
     @include escritorio {
         visibility: visible;
+    }
+}
+.mostrar-1{
+    display: none;
+    @include tablet {
+        display: inline;
+    }
+}
+.no-mostrar{
+    visibility: visible;
+    @include tablet {
+        display: none;
     }
 }
 .fondo-index-1 {
