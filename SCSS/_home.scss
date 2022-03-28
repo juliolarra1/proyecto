@@ -45,7 +45,7 @@
     /* Habilitar la grilla*/
     display: grid;
     grid-template-columns: 0.7fr 0.3fr 0.7fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 14em 15em 14em;
     margin-top: 10em;
     grid-template-areas: 
     'texto-e img-e img-e';
@@ -132,7 +132,7 @@
     /* Habilitar la grilla*/
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 14em 15em 14em;
     margin-top: 11em;
     border-top: 2em solid map-get($colores, color-verde);
     border-bottom: 2em solid map-get($colores, color-verde);
