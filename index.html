@@ -153,39 +153,48 @@
 
 
             <!-- Section noticias -->
-            <div class="section full-height over-hide px-4 px-sm-0">
-                <div class="container">
-                    <div class="row full-height justify-content-center">
-                        <div class="col-lg-10 col-xl-8 align-self-center padding-tb">
-                            <div class="section mx-auto text-center slider-height-padding">
-                                  <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
-                                  <label for="slide-1"></label>
-                                  <input class="checkbox scnd" type="radio" name="slider" id="slider-2"/>
-                                  <label for="slider-2"></label>
-                                  <input class="checkbox thrd" type="radio" name="slider" id="slider-3"/>
-                                  <label for="slider-3"></label>
-                                  <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
-                                  <label for="slider-4"></label>
-                                <ul class="ul-not">
-                                    <li class="li-not">
-                                        <span>NOTICIA 1</span>
-                                    </li>
-                                    <li class="li-not">
-                                        <span>NOTICIA 2</span>
-                                    </li>
-                                    <li class="li-not">
-                                        <span>NOTICIA 3</span>
-                                    </li>
-                                    <li class="li-not">
-                                        <span>NOTICIA 4</span>
-                                    </li>
-                                </ul>
-                            </div>
+            <section data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" class="not">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner img-not">
+                    <div class="carousel-item active img-not" data-bs-interval="10000">
+                        <img src="images/obra2.jpg" class="d-block w-100" alt="obras recientes">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Nueva noticia 1</h5>
+                        <p>Descripcion de la nueva noticia</p>
                         </div>
-                      </div>
+                    </div>
+                    <div class="carousel-item img-not" data-bs-interval="2000">
+                        <img src="images/obra1.jpg" class="d-block w-100" alt="obras recientes">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Nueva noticia 2</h5>
+                        <p>Descripcion de la nueva noticia</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item img-not">
+                        <img src="images/obra4.jpg" class="d-block w-100" alt="obras recientes">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Nueva noticia 3</h5>
+                        <p>Descripcion de la nueva noticia</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
-            
+            </section>
             <!-- Fin section noticias -->
         </main>
         <!-- Fin de la parte central de la pagina -->
