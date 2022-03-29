@@ -4,13 +4,13 @@
 /* Inicio de los estilos especificos de Institucion */
 
 
-/* Definimos la grid del cuerpo de institucion */
-.grid-container-inst {
+/* Definimos la grid del cuerpo de institucion 1 */
+.grid-container-inst-1 {
     /* Habilitar la grilla*/
     display: grid;
     /*En segundo lugar, definir la  cantidad de columnas*/
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30rem 7rem 14rem 30rem 20rem 20rem 28rem 7rem 30rem;
+    grid-template-rows: 30rem 7rem 14rem 30rem;
     grid-row-gap: 0rem;
     margin-top: 3rem;
     margin-bottom: 3em;
@@ -18,18 +18,10 @@
     'img-inst-1 img-inst-2'
     'titulo-historia titulo-historia'
     'desarrollo-historia desarrollo-historia'
-    'img-historia-1 img-historia-2'
-    'mision img-mision'
-    'vision img-vision'
-    'valores img-valores'
-    'titulo-eco titulo-eco'
-    'desarrollo-eco desarrollo-eco';
+    'img-historia-1 img-historia-2';
     @include tablet {
         display: flex;
         flex-direction: column;
-        grid-row-gap: 2rem;
-    }
-    @include telefono {
         grid-row-gap: 0rem;
     }
 
@@ -77,6 +69,30 @@
     box-sizing: border-box;
     
 }
+/* Definimos la grid del cuerpo de institucion 2 */
+.grid-container-inst-2 {
+    /* Habilitar la grilla*/
+    display: grid;
+    /*En segundo lugar, definir la  cantidad de columnas*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20rem 20rem 28rem;
+    grid-row-gap: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3em;
+    grid-template-areas: 
+    'mision img-mision'
+    'vision img-vision'
+    'valores img-valores';
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 1rem;
+    }
+    @include telefono {
+        grid-row-gap: 0rem;
+    }
+
+}
 .mision {
     grid-area: mision;
     padding: 1.5em;
@@ -120,7 +136,25 @@
     
     
 }
-
+/* Definimos la grid del cuerpo de institucion 3 */
+.grid-container-inst-3 {
+    /* Habilitar la grilla*/
+    display: grid;
+    /*En segundo lugar, definir la  cantidad de columnas*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 7rem 30rem;
+    grid-row-gap: 0rem;
+    margin-top: 3rem;
+    margin-bottom: 3em;
+    grid-template-areas:
+    'titulo-eco titulo-eco'
+    'desarrollo-eco desarrollo-eco';
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 0rem;
+    }
+}
 .titulo-eco {
     grid-area: titulo-eco;
     display: flex;
