@@ -12,4 +12,6 @@
 @mixin escritorio-grande{
   @media (min-width: 992px) { @content; }
   }
-  
+@mixin unico{
+    @media (max-width: 200px) { @content; }
+  }

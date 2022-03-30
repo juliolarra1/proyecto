@@ -112,10 +112,20 @@
     --size: 16rem;
     @include escritorio {
         --size: 10rem;
+        padding-left: 38rem;
     }
     @include tablet {
-        --size: 7rem;
+        --size: 6rem;
+        padding-left: 22rem;
     }
+    @include telefono {
+        --size: 4rem;
+        padding-left: 16rem;
+    }
+    @include unico {
+        display: none;
+    }
+
 
 
 
@@ -123,7 +133,7 @@
     grid-auto-flow: column;
     grid-auto-columns: var(--size);
     gap: calc(var(--gap) / 2);
-    padding-left: 36rem;
+    padding-left: 48rem;
     padding-block-end: var(--gap);
 
     overflow-x: auto;
