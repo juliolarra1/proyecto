@@ -325,31 +325,6 @@ textarea {
   text-align: center;
 }
 
-/*
-TEXTO PRUEBA
-.texto-p1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 60px;
-    color: map-get($colores, color-contraste);
-}
-.texto-p2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: map-get($colores, color-texto-3);
-}
-.separado-p1 {
-    padding: 0;
-    margin: 0px;
-    text-align: center;
-}
-.separado-p2 {
-    padding-left: 6px;
-    margin: 0px;
-    text-align: center;
-}
-*/
 /* Esta clase le da un tamaño especifico a las imagenes en el carousel*/
 .img-not {
   width: 30rem;
@@ -1013,8 +988,8 @@ a:hover {
   display: grid;
   /*En segundo lugar, definir la  cantidad de columnas*/
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 6em 38em;
-  margin-bottom: 4rem;
+  grid-template-rows: 6em 30em;
+  margin-bottom: 0rem;
 }
 @media (max-width: 991px) {
   .grid-container-proy {
@@ -1041,19 +1016,9 @@ a:hover {
 }
 
 .grid-container-proy .car-comp:nth-child(2) {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  margin-top: 4rem;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #022047;
-}
-@media (max-width: 480px) {
-  .grid-container-proy .car-comp:nth-child(2) {
-    margin-top: 1em;
-  }
+  grid-column: 1/4;
+  grid-row: 2/4;
+  margin-top: 0rem;
 }
 
 .grid-container-proy-1 {
@@ -1061,8 +1026,8 @@ a:hover {
   display: grid;
   /*En segundo lugar, definir la  cantidad de columnas*/
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 6em 38em;
-  margin-bottom: 4rem;
+  grid-template-rows: 6em 30em;
+  margin-bottom: 0rem;
 }
 @media (max-width: 991px) {
   .grid-container-proy-1 {
@@ -1089,19 +1054,108 @@ a:hover {
 }
 
 .grid-container-proy-1 .car-comp-1:nth-child(2) {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  margin-top: 4rem;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #022047;
+  grid-column: 1/4;
+  grid-row: 2/4;
+  margin-top: 0rem;
 }
-@media (max-width: 480px) {
-  .grid-container-proy-1 .car-comp-1:nth-child(2) {
-    margin-top: 1em;
+
+.html-p {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.body-p {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 2rem;
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 4rem;
+  place-content: center;
+}
+
+.section-p {
+  --gap: 2.5rem;
+  display: grid;
+  gap: var(--gap);
+}
+.section-p > header {
+  padding-inline: var(--gap);
+  display: grid;
+  gap: 1ex;
+}
+.section-p > header > :is(h2, h3) {
+  margin: 0;
+}
+
+.horizontal-media-scroller {
+  --size: 16rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--size);
+  gap: calc(var(--gap) / 2);
+  padding-left: 36rem;
+  padding-block-end: var(--gap);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline-start: var(--gap);
+}
+@media (max-width: 1295px) {
+  .horizontal-media-scroller {
+    --size: 10rem;
   }
+}
+@media (max-width: 991px) {
+  .horizontal-media-scroller {
+    --size: 7rem;
+  }
+}
+.horizontal-media-scroller > figure {
+  scroll-snap-align: start;
+  display: grid;
+  gap: inherit;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.horizontal-media-scroller > figure:last-child::after {
+  content: "";
+  position: absolute;
+  width: var(--gap);
+  height: 100%;
+  right: calc(var(--gap) * -1);
+  inline-size: var(--gap);
+  block-size: 100%;
+  inset-block-start: 0;
+  inset-block-end: calc(var(--gap) * -1);
+}
+.horizontal-media-scroller > figure > picture {
+  display: inline-block;
+  inline-size: var(--size);
+  block-size: var(--size);
+  border-radius: 1ex;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.horizontal-media-scroller > figure > picture > img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  background-image: linear-gradient(to bottom, #5c6670, #2e3338);
+}
+.horizontal-media-scroller > figure > figcaption {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
 }
 
 /* Fin de los estilos especificos de Proyectos */
